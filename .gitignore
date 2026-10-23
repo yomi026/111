@@ -1,0 +1,23 @@
+# 系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# 编辑器 / IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+.cache/
+
+# 日志与临时文件
+*.log
+*.tmp
+*.bak

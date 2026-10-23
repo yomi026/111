@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore a happy gallery of adorable cats, dogs, rabbits, and hamsters.">
+  <title>Little Paws | Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href=" ">Skip to content</a >
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span class="logo-icon" aria-hidden="true">♡</span> Little Paws</a >
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a >
+        <a href="animals.html">Animals</a >
+        <a href="care.html">Care Guide</a >
+        <a href="gallery.html" aria-current="page">Gallery</a >
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner container">
+      <span class="eyebrow">A LITTLE DOSE OF HAPPINESS</span>
+      <h1>Welcome to our gallery.</h1>
+      <p>Take a deep breath, meet some furry faces, and collect a little joy.</p >
+      <div class="breadcrumb"><a href="index.html">Home</a > / Gallery</div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CUTE MOMENTS</span>
+          <h2>Find your favorite face.</h2>
+        </div>
+        <p class="gallery-count" id="gallery-count" aria-live="polite">12 lovely moments</p >
+      </div>
+
+      <div class="filter-bar" aria-label="Filter gallery">
+        <button class="filter-button active" type="button" data-gallery-filter="all" aria-pressed="true">All Photos</button>
+        <button class="filter-button" type="button" data-gallery-filter="cat" aria-pressed="false">Cats</button>
+        <button class="filter-button" type="button" data-gallery-filter="dog" aria-pressed="false">Dogs</button>
+        <button class="filter-button" type="button" data-gallery-filter="rabbit" aria-pressed="false">Rabbits</button>
+        <button class="filter-button" type="button" data-gallery-filter="hamster" aria-pressed="false">Hamsters</button>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item" data-gallery-animal="cat">
+          < img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=700&q=80" alt="A cat with bright eyes" loading="lazy">
+          <figcaption><span>Sleepy eyes, happy heart</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add cat photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="dog">
+          < img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=700&q=80" alt="A golden dog outdoors" loading="lazy">
+          <figcaption><span>Ready for an adventure</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add dog photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="rabbit">
+          < img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=700&q=80" alt="A fluffy rabbit" loading="lazy">
+          <figcaption><span>Little cloud of fluff</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add rabbit photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="hamster">
+          < img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=700&q=80" alt="A small golden hamster" loading="lazy">
+          <figcaption><span>Tiny paws, big dreams</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add hamster photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="cat">
+          < img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=80" alt="A relaxed cat sitting at home" loading="lazy">
+          <figcaption><span>A cozy afternoon</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add cat photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="dog">
+          < img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=700&q=80" alt="A happy dog looking at the camera" loading="lazy">
+          <figcaption><span>Sunshine in a smile</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add dog photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="rabbit">
+          < img src="https://images.unsplash.com/photo-1535241749838-299277b6305f?auto=format&fit=crop&w=700&q=80" alt="A rabbit enjoying a quiet moment" loading="lazy">
+          <figcaption><span>Soft and peaceful</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add rabbit photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="hamster">
+          < img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=700&q=80" alt="A little hamster resting" loading="lazy">
+          <figcaption><span>Small but mighty</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add hamster photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="cat">
+          < img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=700&q=80" alt="A cat resting comfortably" loading="lazy">
+          <figcaption><span>Nap time is the best time</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add cat photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="dog">
+          < img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=700&q=80" alt="A friendly dog portrait" loading="lazy">
+          <figcaption><span>Your loyal little friend</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add dog photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="rabbit">
+          < img src="https://images.unsplash.com/photo-1452857297128-d9c29adba80b?auto=format&fit=crop&w=700&q=80" alt="A small rabbit sitting quietly" loading="lazy">
+          <figcaption><span>A gentle little soul</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add rabbit photo to favorites">♡</button></figcaption>
+        </figure>
+        <figure class="gallery-item" data-gallery-animal="hamster">
+          < img src="https://images.unsplash.com/photo-1591561582301-7ce6588cc286?auto=format&fit=crop&w=700&q=80" alt="A curious little pet" loading="lazy">
+          <figcaption><span>Curious little explorer</span><button class="favorite-button" type="button" aria-pressed="false" aria-label="Add hamster photo to favorites">♡</button></figcaption>
+        </figure>
+      </div>
+
+      <p class="empty-state" hidden>No photos found in this category.</p >
+    </section>
+
+    <section class="section section-soft">
+      <div class="container fun-fact">
+        <div>
+          <span class="eyebrow">A TINY HAPPY FACT</span>
+          <h2>Did you know?</h2>
+          <p id="fun-fact-text" aria-live="polite">Cats use their whiskers to help sense their surroundings.</p >
+          <button class="button button-primary" id="fact-button" type="button">Another Fun Fact ✨</button>
+        </div>
+        <div class="fact-decoration" aria-hidden="true">🐾</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo footer-logo" href="index.html">♡ Little Paws</a >
+      <p>Made with love for our furry friends.</p >
+      <p>© <span class="current-year">2026</span> Little Paws</p >
+    </div>
+  </footer>
+</body>
+</html>
