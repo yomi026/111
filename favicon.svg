@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Little Paws">
+  <rect width="64" height="64" rx="14" fill="#b96f86"/>
+  <g fill="#fffaf3">
+    <ellipse cx="21" cy="24" rx="6" ry="7.6" transform="rotate(-16 21 24)"/>
+    <ellipse cx="32" cy="20.5" rx="6" ry="7.8"/>
+    <ellipse cx="43" cy="24" rx="6" ry="7.6" transform="rotate(16 43 24)"/>
+    <ellipse cx="52" cy="34" rx="5.4" ry="6.8" transform="rotate(30 52 34)"/>
+    <path d="M32 32c7.6 0 15 6.2 15 13 0 5.4-4 8.6-9.2 8.6-2.3 0-4-.9-5.8-.9s-3.5.9-5.8.9C21 53.6 17 50.4 17 45c0-6.8 7.4-13 15-13z"/>
+  </g>
+</svg>

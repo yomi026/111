@@ -1159,3 +1159,64 @@ p {
     text-align: left;
   }
 }
+
+
+/* ========================================
+   PRINT — checklists and tables on paper
+   ======================================== */
+
+@media print {
+  .site-header,
+  .site-footer,
+  .skip-link,
+  .filter-bar,
+  .favorite-button,
+  .fun-fact,
+  .button,
+  .hero-art,
+  .floating-note,
+  .decor {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  .section,
+  .section-tight {
+    padding-block: 14px;
+  }
+
+  .section-soft {
+    background: #fff;
+  }
+
+  .animal-card,
+  .tip-card,
+  .check-card,
+  .compare-table,
+  .callout,
+  .faq-item,
+  .care-row {
+    break-inside: avoid;
+    box-shadow: none;
+    border-color: #bbb;
+  }
+
+  .table-wrap {
+    overflow: visible;
+    border-color: #bbb;
+  }
+
+  .callout {
+    border-left-width: 4px;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
