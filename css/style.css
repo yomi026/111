@@ -1220,3 +1220,59 @@ p {
     text-decoration: none;
   }
 }
+
+
+/* Numbered process steps (adoption guide) */
+
+.step-list {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.step-list li {
+  position: relative;
+  padding: 22px 26px 22px 76px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  counter-increment: step;
+}
+
+.step-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: 22px;
+  top: 20px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  background: var(--pink);
+  color: var(--rose);
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.step-list h3 {
+  margin-bottom: 6px;
+  font-size: 1.12rem;
+}
+
+.step-list p {
+  margin: 0;
+  font-size: 0.93rem;
+}
+
+@media (max-width: 700px) {
+  .step-list li {
+    padding: 20px 20px 20px 66px;
+  }
+
+  .step-list li::before {
+    left: 16px;
+  }
+}
